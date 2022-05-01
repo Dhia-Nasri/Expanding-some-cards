@@ -1,0 +1,88 @@
+body{
+  background-color: #E8F9FD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+
+}
+
+
+ .item1{
+   background-image :url("https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cmFuZG9tfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+ }
+
+ .item2{
+   background-image :url("https://wallpaperaccess.com/full/1652396.jpg")
+
+ }
+
+ .item3{
+   background-image :url("https://images.unsplash.com/photo-1581413397207-3e3654abd347?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHw%3D&w=1000&q=80")
+ }
+
+ .item4{
+   background-image :url("https://www.ledgerinsights.com/wp-content/uploads/2019/12/red-sicilian-oranges-810x524.jpg")
+ }
+
+ .item5{
+   background-image :url("https://thumbs.dreamstime.com/b/asian-green-oranges-pile-some-sliced-open-54570379.jpg")
+ }
+
+ .container{
+   display: flex;
+
+   justify-content: center;
+   align-items: center;
+   width: 90vw;
+
+ }
+
+ .item{
+   display: flex;
+   margin:   10px;
+   height: 80vh;
+
+   position: relative;
+   border-radius: 30px;
+   background-position: center;
+   background-size: auto 100%;
+   background-repeat: no-repeat;
+   color: #fff;
+   flex: 0.5;
+   transition: flex 0.7s ease-in;
+
+ }
+
+   h3{
+   font-size: 25px;
+   position: absolute;
+   bottom: 20px;
+   left: 20px;
+   margin: 0;
+   color: #fff;
+   opacity: 0;
+
+ }
+
+  .active{
+   flex: 5;
+   border-radius: 5%;
+ }
+
+ .active h3{
+   opacity: 1;
+ }
+
+ @media (max-width: 520px) {
+   .container{
+     width: 100vw;
+   }
+
+   .item4,.item5{
+     display: none;
+   }
+
+ }
